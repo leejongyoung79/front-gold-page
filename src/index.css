@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* shadcn/ui에서 사용하는 기본 배경색 변수를 직접 정의해줍니다 */
+  --color-background: #ffffff;
+  --color-foreground: #020817;
+  
+  --color-primary: #0f172a;
+  --color-primary-foreground: #f8fafc;
+  
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  
+  --color-accent: #f1f5f9;
+  --color-accent-foreground: #0f172a;
+
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #020817;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
