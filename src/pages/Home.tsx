@@ -34,7 +34,7 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
-                현재 신규 기업 파트너 모집 중
+                이로운 이로운
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold font-heading tracking-tight text-foreground mb-6 text-balance">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">황금프러퍼티</span><br></br>
