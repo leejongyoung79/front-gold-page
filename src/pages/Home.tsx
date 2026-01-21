@@ -13,13 +13,14 @@ export default function Home() {
   const { data: testimonials, isLoading: isLoadingTestimonials } = useTestimonials();
 
   return (
-    <div className="flex flex-col min-h-screen bg-amber-400">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-primary/5 blur-[100px]" />
-          <div className="absolute top-[40%] -left-[10%] w-[500px] h-[500px] rounded-full bg-accent/5 blur-[100px]" />
+          <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-amber-200/20 blur-[120px]" />
+          <div className="absolute top-[40%] -left-[10%] w-[500px] h-[500px] rounded-full bg-yellow-200/15 blur-[120px]" />
+          <div className="absolute bottom-[10%] right-[20%] w-[400px] h-[400px] rounded-full bg-amber-300/10 blur-[100px]" />
         </div>
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 bg-secondary/30">
+      <section className="py-24 bg-gradient-to-b from-transparent via-amber-50/40 to-transparent backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-4">우리의 전문 분야</h2>
@@ -124,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-gradient-to-b from-transparent via-yellow-50/30 to-amber-50/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-4">함께 성장하는 파트너들</h2>
@@ -173,8 +174,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+      <section className="py-24 bg-gradient-to-br from-amber-600 via-amber-500 to-yellow-600 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-5xl font-bold font-heading mb-6">비즈니스의 변화를 시작할 준비가 되셨나요?</h2>
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
