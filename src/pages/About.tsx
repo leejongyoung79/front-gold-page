@@ -12,7 +12,7 @@ export default function About() {
       {/* Header */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">NexCorp 소개</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">황금프로퍼티 소개</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             이로운 이로운 이로운
             우리의 사명은 기업들이 성장, 효율성, 그리고 지속 가능성을 견인하는 기술을 통해 도약할 수 있도록 돕는 것입니다.
