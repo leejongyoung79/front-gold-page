@@ -13,7 +13,7 @@ export default function Home() {
   const { data: testimonials, isLoading: isLoadingTestimonials } = useTestimonials();
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-amber-400">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         {/* Background Decoration */}
@@ -41,7 +41,7 @@ export default function Home() {
                 미래를 설계합니다
               </h1>
               <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto text-balance">
-                여기는 테스트 화면입니다. 이로운 화이팅!
+                여기는 테스트 화면입니다. 이로운 화이팅! dlee hjosadf
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">

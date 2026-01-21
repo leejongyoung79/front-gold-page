@@ -21,9 +21,6 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="font-heading font-bold text-xl tracking-tight text-foreground">
-              NexCorp
-            </span>
           </Link>
 
           {/* Desktop Nav */}
