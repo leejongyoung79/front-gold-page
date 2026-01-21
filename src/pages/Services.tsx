@@ -10,8 +10,13 @@ export default function Services() {
   const { data: services, isLoading } = useServices();
 
   return (
-    <div className="min-h-screen pt-24 pb-20">
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div className="min-h-screen pt-24 pb-20 relative bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute -top-[10%] -right-[10%] w-[500px] h-[500px] rounded-full bg-amber-200/20 blur-[120px]" />
+        <div className="absolute bottom-[20%] -left-[10%] w-[400px] h-[400px] rounded-full bg-yellow-200/15 blur-[100px]" />
+      </div>
+      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">서비스 안내</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
@@ -21,7 +26,7 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {isLoading ? (
             Array(6).fill(0).map((_, i) => (
@@ -50,8 +55,8 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-32">
-        <div className="bg-primary/5 rounded-3xl p-12 text-center border border-primary/10">
+      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+        <div className="bg-gradient-to-br from-amber-100/50 to-yellow-100/40 rounded-3xl p-12 text-center border border-amber-200/30 backdrop-blur-sm">
           <h2 className="text-3xl font-bold font-heading mb-4">맞춤형 솔루션이 필요하신가요?</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             모든 비즈니스는 고유합니다. 우리는 귀하의 특정 요구사항과 도전 과제에 맞춰 서비스를 최적화해 드립니다.

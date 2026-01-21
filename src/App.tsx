@@ -12,7 +12,7 @@ import Contact from "@/pages/Contact";
 
 function Router() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
       <Navbar />
       <main className="flex-grow">
         <Switch>

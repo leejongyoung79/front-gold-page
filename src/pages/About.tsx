@@ -8,9 +8,14 @@ export default function About() {
   const { data: team, isLoading } = useTeam();
 
   return (
-    <div className="min-h-screen pt-24 pb-20">
+    <div className="min-h-screen pt-24 pb-20 relative bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
+      {/* Background Decoration */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute top-[10%] -left-[10%] w-[600px] h-[600px] rounded-full bg-amber-200/20 blur-[120px]" />
+        <div className="absolute bottom-[10%] -right-[10%] w-[500px] h-[500px] rounded-full bg-yellow-200/15 blur-[100px]" />
+      </div>
       {/* Header */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">황금프로퍼티 소개</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
@@ -21,7 +26,7 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-secondary/30 py-20 mb-20">
+      <section className="bg-gradient-to-b from-transparent via-amber-50/40 to-transparent backdrop-blur-sm py-20 mb-20 relative z-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">

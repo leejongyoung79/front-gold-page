@@ -31,7 +31,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20 bg-secondary/30">
+    <div className="min-h-screen pt-24 pb-20 bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">문의하기</h1>
