@@ -11,6 +11,31 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Contact() {
+  // 1. 상태 관리를 위해 useState가 필요할 수 있으므로 상단 import에 추가하거나 
+  // 기존 submitMutation의 로딩 상태를 흉내내기 위해 아래와 같이 작성합니다.
+
+  async function onSubmit(data: InsertContactMessage) {
+    try {
+      // Formspree API 호출 (여러분의 고유 ID로 xxxxx 부분을 교체하세요)
+      const response = await fetch("https://formspree.io/f/xlgjjvql", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.");
+        form.reset(); // 폼 비우기
+      } else {
+        const errorData = await response.json();
+        alert("전송 실패: " + (errorData.error || "다시 시도해주세요."));
+      }
+    } catch (error) {
+      alert("네트워크 오류가 발생했습니다. 인터넷 연결을 확인해주세요.");
+    }
+  }
   const submitMutation = useContactSubmit();
   
   const form = useForm<InsertContactMessage>({
@@ -150,14 +175,16 @@ export default function Contact() {
                       )}
                     />
 
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="w-full md:w-auto px-8 bg-primary hover:bg-primary/90 text-white rounded-md"
-                      disabled={submitMutation.isPending}
-                    >
-                      {submitMutation.isPending ? "Sending..." : "Send Message"}
-                    </Button>
+<Button 
+  type="submit" 
+  size="lg" 
+  className="w-full md:w-auto px-8 bg-primary hover:bg-primary/90 text-white rounded-md"
+  // isLoading 상태를 따로 만들지 않았다면 일단 비활성화 로직을 제거하거나 
+  // form.formState.isSubmitting를 사용하면 편리합니다.
+  disabled={form.formState.isSubmitting}
+>
+  {form.formState.isSubmitting ? "Sending..." : "Send Message"}
+</Button>
                   </form>
                 </Form>
               </CardContent>
