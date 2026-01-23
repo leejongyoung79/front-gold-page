@@ -8,24 +8,24 @@ export default function Home() {
   const coreValues = [
     {
       icon: Lightbulb,
-      title: "Innovation",
-      description: "Pushing boundaries with cutting-edge technology and creative solutions that transform industries and redefine possibilities."
+      title: "혁신",
+      description: "최첨단 기술과 창의적 개발 솔루션으로 부동산 개발의 한계를 넘어, 새로운 가치와 가능성을 창출합니다."
     },
     {
       icon: Shield,
-      title: "Integrity",
-      description: "Building trust through transparency, ethical practices, and unwavering commitment to our clients and partners."
+      title: "정직",
+      description: "투명한 사업 운영과 윤리적 경영, 그리고 고객과 파트너에 대한 변함없는 책임으로 신뢰를 구축합니다."
     },
     {
       icon: Leaf,
-      title: "Sustainability",
-      description: "Creating solutions that not only meet today's needs but also preserve resources for future generations."
+      title: "지속가능성",
+      description: "현재의 요구를 충족하는 것을 넘어, 미래 세대를 위한 자원 보존까지 고려한 지속가능한 개발 솔루션을 제공합니다."
     }
   ];
 
   const projects = [
     {
-      label: "URBAN DESIGN",
+      label: "도시 설계",
       title: "Urban Vision Center",
       gradient: "from-green-400/30 via-yellow-400/20 to-green-500/30",
       labelBg: "bg-blue-600"
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Core Values</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">핵심 가치</h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-4"></div>
             <p className="text-lg text-gray-600">
             탁월한 개발 역량과 선진적인 공간 기획을 통해 미래 가치를 창출하겠다는 우리의 의지
