@@ -14,8 +14,8 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">About 황금프로퍼티</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Our mission is to help businesses leap forward through technology that drives growth, efficiency, and sustainability.
-            We bridge the gap between complex technology and business needs, creating solutions that are not just powerful, but intuitive and delightful.
+          우리는 기술을 통해 개발 사업과 기업의 성장, 운영 효율, 지속가능한 가치 창출을 실현하는 것을 미션으로 합니다.
+          복잡한 기술 환경과 비즈니스 요구를 연결하여, 강력하면서도 직관적이고 사용자 친화적인 솔루션을 제공합니다.
           </p>
         </div>
       </section>
@@ -25,16 +25,16 @@ export default function About() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">경영 이념</h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We serve as a bridge between complex technology and business requirements. 
-                Beyond simply delivering high-performance technology, we aim to create solutions that provide intuitive and enjoyable experiences.
+              우리는 복잡한 기술과 비즈니스 요구 사항을 연결하는 가교 역할을 수행합니다. 
+              단순히 고성능 기술을 제공하는 것을 넘어, 직관적이고 쾌적한 사용자 경험을 제공하는 솔루션을 구현하는 것을 목표로 합니다.
               </p>
               
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Vision</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">경영 비전</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We envision a world where digital innovation is accessible and seamless for businesses of all sizes.
-                We are building a future where technology doesn't replace humans, but maximizes human potential.
+              우리는 모든 규모의 기업과 프로젝트가 디지털 혁신을 쉽고 원활하게 활용할 수 있는 세상을 지향합니다.
+              기술이 인간을 대체하는 것이 아니라, 인간의 잠재력을 극대화하는 미래를 만들어가고자 합니다..
               </p>
             </div>
             <div>
@@ -53,7 +53,8 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            The exceptional talent behind our success. We combine diverse expertise to solve complex challenges.
+          당사의 성공을 견인하는 핵심 인재 그룹입니다.
+          각 분야의 전문 역량을 결합해 복잡한 사업 및 기술 과제를 해결합니다.
           </p>
         </div>
 
