@@ -36,7 +36,8 @@ export default function Contact() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get in Touch</h1>
           <p className="text-xl text-gray-600">
-            Planning a new project? Tell us your story. We'll get back to you within 24 hours.
+          새로운 개발 프로젝트를 계획하고 계신가요?<br>
+          프로젝트의 개요와 목표를 알려주시면, 24시간 이내에 검토 후 신속히 연락드리겠습니다.
           </p>
         </div>
 
@@ -50,10 +51,10 @@ export default function Contact() {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1 text-gray-900">Headquarters</h3>
+                    <h3 className="font-bold text-lg mb-1 text-gray-900"> 본사</h3>
                     <p className="text-gray-600">
-                      123 Innovation Street<br />
-                      Seoul, South Korea 06000
+                      대구광역시 서구 달서로 7길 <br />
+                      
                     </p>
                   </div>
                 </div>
@@ -69,8 +70,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-lg mb-1 text-gray-900">Email</h3>
                     <p className="text-gray-600">
-                      hello@futurebound.com<br />
-                      support@futurebound.com
+                    zeiss1001@hanmail.net<br />
+                      motoz3@naver.com
                     </p>
                   </div>
                 </div>
@@ -86,8 +87,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-lg mb-1 text-gray-900">Phone</h3>
                     <p className="text-gray-600">
-                      +82-2-123-4567<br />
-                      Mon-Fri 9AM - 6PM KST
+                      010-7443-8888<br />
+                      010-2524-7407
                     </p>
                   </div>
                 </div>
