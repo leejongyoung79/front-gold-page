@@ -3,8 +3,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "./mode-toggle"
-
+import { ModeToggle } from "./mode-toggle";
 
 export function Navbar() {
   const [location] = useLocation();
@@ -18,15 +17,15 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
+            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm transform rotate-12"></div>
             </div>
-            <span className="text-xl font-bold text-gray-900">황금프로퍼티</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white">황금프로퍼티</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -37,13 +36,17 @@ export function Navbar() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
                   location === item.href
-                    ? "text-gray-900"
-                    : "text-gray-600 hover:text-gray-900"
+                    ? "text-gray-900 dark:text-white"
+                    : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
+
+            {/* ⭐ 데스크탑 토글 버튼 추가 */}
+            <ModeToggle />
+
             <Link href="/contact">
               <Button size="sm" className="font-semibold bg-primary hover:bg-primary/90 text-white rounded-md px-6">
                 Get Started
@@ -52,11 +55,14 @@ export function Navbar() {
           </div>
 
           {/* Mobile Nav */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            {/* ⭐ 모바일 토글 버튼 추가 (햄버거 메뉴 왼쪽) */}
+            <ModeToggle />
+
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-6 w-6 dark:text-white" />
                 </Button>
               </SheetTrigger>
               <SheetContent>
@@ -68,8 +74,8 @@ export function Navbar() {
                       onClick={() => setIsOpen(false)}
                       className={`text-lg font-medium transition-colors ${
                         location === item.href
-                          ? "text-gray-900"
-                          : "text-gray-600"
+                          ? "text-gray-900 dark:text-white"
+                          : "text-gray-600 dark:text-gray-400"
                       }`}
                     >
                       {item.label}
