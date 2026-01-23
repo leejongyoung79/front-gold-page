@@ -12,15 +12,15 @@ export function ServiceCard({ service }: ServiceCardProps) {
   const IconComponent = (LucideIcons[service.icon as keyof typeof LucideIcons] || LucideIcons.Box) as LucideIcon;
 
   return (
-    <Card className="h-full border-border/50 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300 group bg-card">
+    <Card className="h-full border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 group bg-white">
       <CardHeader>
-        <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
+        <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-blue-100 transition-all duration-300">
           <IconComponent className="h-6 w-6 text-primary" />
         </div>
-        <CardTitle className="text-xl font-heading">{service.title}</CardTitle>
+        <CardTitle className="text-xl font-bold text-gray-900">{service.title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-base leading-relaxed">
+        <CardDescription className="text-base leading-relaxed text-gray-600">
           {service.description}
         </CardDescription>
       </CardContent>

@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* shadcn/ui에서 사용하는 기본 배경색 변수를 직접 정의해줍니다 */
+  /* FutureBound Design Color Scheme */
   --color-background: #ffffff;
-  --color-foreground: #020817;
+  --color-foreground: #1f2937;
   
-  --color-primary: #0f172a;
-  --color-primary-foreground: #f8fafc;
+  --color-primary: #2563eb;
+  --color-primary-foreground: #ffffff;
   
-  --color-muted: #f1f5f9;
-  --color-muted-foreground: #64748b;
+  --color-muted: #f9fafb;
+  --color-muted-foreground: #6b7280;
   
-  --color-accent: #f1f5f9;
-  --color-accent-foreground: #0f172a;
-
-  --color-border: #e2e8f0;
-  --color-input: #e2e8f0;
-  --color-ring: #020817;
+  --color-accent: #f3f4f6;
+  --color-accent-foreground: #1f2937;
+  
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-ring: #2563eb;
 }
 
 @layer base {

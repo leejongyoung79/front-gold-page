@@ -10,27 +10,22 @@ export default function Services() {
   const { data: services, isLoading } = useServices();
 
   return (
-    <div className="min-h-screen pt-24 pb-20 relative bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="absolute -top-[10%] -right-[10%] w-[500px] h-[500px] rounded-full bg-amber-200/20 blur-[120px]" />
-        <div className="absolute bottom-[20%] -left-[10%] w-[400px] h-[400px] rounded-full bg-yellow-200/15 blur-[100px]" />
-      </div>
-      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div className="min-h-screen pt-24 pb-20 bg-white">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">서비스 안내</h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            비즈니스의 성장을 돕기 위해 설계된 포괄적인 디지털 솔루션을 제공합니다.
-            맞춤형 개발부터 전략적 컨설팅까지, NexCorp가 함께합니다.
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Our Services</h1>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Comprehensive digital solutions designed to help your business grow.
+            From custom development to strategic consulting, FutureBound is with you every step of the way.
           </p>
         </div>
       </section>
 
-      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {isLoading ? (
             Array(6).fill(0).map((_, i) => (
-              <div key={i} className="h-80 bg-muted/20 rounded-xl p-6">
+              <div key={i} className="h-80 bg-gray-50 rounded-lg p-6 border border-gray-200">
                 <Skeleton className="h-12 w-12 rounded-lg mb-6" />
                 <Skeleton className="h-8 w-3/4 mb-4" />
                 <Skeleton className="h-4 w-full mb-2" />
@@ -55,15 +50,15 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 mt-32">
-        <div className="bg-gradient-to-br from-amber-100/50 to-yellow-100/40 rounded-3xl p-12 text-center border border-amber-200/30 backdrop-blur-sm">
-          <h2 className="text-3xl font-bold font-heading mb-4">맞춤형 솔루션이 필요하신가요?</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            모든 비즈니스는 고유합니다. 우리는 귀하의 특정 요구사항과 도전 과제에 맞춰 서비스를 최적화해 드립니다.
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+        <div className="bg-gray-50 rounded-2xl p-12 text-center border border-gray-200 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Need a Custom Solution?</h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Every business is unique. We optimize our services to match your specific requirements and challenges.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="rounded-full px-8">
-              프로젝트 상담하기 <ArrowRight className="ml-2 h-4 w-4" />
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-md px-8">
+              Schedule a Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </div>

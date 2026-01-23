@@ -31,63 +31,63 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-20 bg-gradient-to-br from-amber-50/80 via-yellow-50/60 to-amber-100/40">
+    <div className="min-h-screen pt-24 pb-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-4xl lg:text-6xl font-bold font-heading mb-6">문의하기</h1>
-          <p className="text-xl text-muted-foreground">
-            새로운 프로젝트를 구상 중이신가요? 여러분의 이야기를 들려주세요. 24시간 이내에 답변해 드리겠습니다.
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get in Touch</h1>
+          <p className="text-xl text-gray-600">
+            Planning a new project? Tell us your story. We'll get back to you within 24 hours.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
-            <Card className="border-border/50 shadow-md">
+            <Card className="border border-gray-200 shadow-sm">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                  <div className="bg-blue-50 p-3 rounded-lg">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">본사 위치</h3>
-                    <p className="text-muted-foreground">
-                      서울특별시 강남구 혁신대로 123<br />
-                      넥스빌딩 5층
+                    <h3 className="font-bold text-lg mb-1 text-gray-900">Headquarters</h3>
+                    <p className="text-gray-600">
+                      123 Innovation Street<br />
+                      Seoul, South Korea 06000
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-border/50 shadow-md">
+            <Card className="border border-gray-200 shadow-sm">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                  <div className="bg-blue-50 p-3 rounded-lg">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">이메일 문의</h3>
-                    <p className="text-muted-foreground">
-                      hello@nexcorp.com<br />
-                      support@nexcorp.com
+                    <h3 className="font-bold text-lg mb-1 text-gray-900">Email</h3>
+                    <p className="text-gray-600">
+                      hello@futurebound.com<br />
+                      support@futurebound.com
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-border/50 shadow-md">
+            <Card className="border border-gray-200 shadow-sm">
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                  <div className="bg-blue-50 p-3 rounded-lg">
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">전화 문의</h3>
-                    <p className="text-muted-foreground">
-                      02-123-4567<br />
-                      평일 오전 9시 - 오후 6시
+                    <h3 className="font-bold text-lg mb-1 text-gray-900">Phone</h3>
+                    <p className="text-gray-600">
+                      +82-2-123-4567<br />
+                      Mon-Fri 9AM - 6PM KST
                     </p>
                   </div>
                 </div>
@@ -97,9 +97,9 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="border-border/50 shadow-xl bg-card">
+            <Card className="border border-gray-200 shadow-lg bg-white">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold font-heading mb-6">메시지 보내기</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
@@ -108,9 +108,9 @@ export default function Contact() {
                         name="name"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>성함</FormLabel>
+                            <FormLabel className="text-gray-900">Name</FormLabel>
                             <FormControl>
-                              <Input placeholder="홍길동" className="h-12" {...field} />
+                              <Input placeholder="John Doe" className="h-12 border-gray-300" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -121,9 +121,9 @@ export default function Contact() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>이메일 주소</FormLabel>
+                            <FormLabel className="text-gray-900">Email Address</FormLabel>
                             <FormControl>
-                              <Input placeholder="example@email.com" type="email" className="h-12" {...field} />
+                              <Input placeholder="example@email.com" type="email" className="h-12 border-gray-300" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -136,11 +136,11 @@ export default function Contact() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>메시지</FormLabel>
+                          <FormLabel className="text-gray-900">Message</FormLabel>
                           <FormControl>
                             <Textarea 
-                              placeholder="프로젝트에 대해 알려주세요..." 
-                              className="min-h-[160px] resize-none" 
+                              placeholder="Tell us about your project..." 
+                              className="min-h-[160px] resize-none border-gray-300" 
                               {...field} 
                             />
                           </FormControl>
@@ -152,10 +152,10 @@ export default function Contact() {
                     <Button 
                       type="submit" 
                       size="lg" 
-                      className="w-full md:w-auto px-8"
+                      className="w-full md:w-auto px-8 bg-primary hover:bg-primary/90 text-white rounded-md"
                       disabled={submitMutation.isPending}
                     >
-                      {submitMutation.isPending ? "보내는 중..." : "메시지 보내기"}
+                      {submitMutation.isPending ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </Form>
