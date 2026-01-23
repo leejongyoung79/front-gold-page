@@ -12,7 +12,7 @@ export default function About() {
       {/* Header */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">About FutureBound</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">About 황금프로퍼티</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Our mission is to help businesses leap forward through technology that drives growth, efficiency, and sustainability.
             We bridge the gap between complex technology and business needs, creating solutions that are not just powerful, but intuitive and delightful.

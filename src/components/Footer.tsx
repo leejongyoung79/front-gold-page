@@ -10,7 +10,7 @@ export function Footer() {
             <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm transform rotate-12"></div>
             </div>
-            <span className="text-xl font-bold text-gray-900">FutureBound</span>
+            <span className="text-xl font-bold text-gray-900">황금프로퍼티</span>
           </div>
           
           <p className="text-sm text-gray-500">

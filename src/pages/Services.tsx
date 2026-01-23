@@ -15,7 +15,7 @@ export default function Services() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">사업 영역</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-          개발 및 디벨로퍼 비즈니스 성장을 지원하는 종합 디지털 솔루션을 제공합니다. 맞춤형 시스템 구축부터 전략 컨설팅까지, FutureBound는 전 과정에서 파트너로 함께합니다.
+          개발 및 디벨로퍼 비즈니스 성장을 지원하는 종합 디지털 솔루션을 제공합니다. 맞춤형 시스템 구축부터 전략 컨설팅까지  황금프로퍼티는 전 과정에서 파트너로 함께합니다.
           </p>
         </div>
       </section>
