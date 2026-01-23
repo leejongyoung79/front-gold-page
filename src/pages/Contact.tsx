@@ -58,22 +58,26 @@ export default function Contact() {
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
-            <Card className="border border-gray-200 shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1 text-gray-900"> 본사</h3>
-                    <p className="text-gray-600">
-                      대구광역시 서구 달서로 7길 <br />
-                      
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          <Card className="border border-gray-200 shadow-sm">
+  <CardContent className="pt-6">
+    <div className="flex items-start gap-4">
+      <div className="bg-blue-50 p-3 rounded-lg">
+        <MapPin className="h-6 w-6 text-primary" />
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-1 text-gray-900">본사</h3>
+        <a 
+          href="https://www.google.com/maps/search/?api=1&query=대구광역시+서구+달서로7길" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-600 block hover:text-blue-600 hover:underline transition-all"
+        >
+          대구광역시 서구 달서로 7길 14
+        </a>
+      </div>
+    </div>
+  </CardContent>
+</Card>
 
             <Card className="border border-gray-200 shadow-sm">
   <CardContent className="pt-6">
