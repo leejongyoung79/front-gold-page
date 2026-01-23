@@ -99,7 +99,7 @@ export default function Home() {
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Core Values</h2>
             <div className="w-16 h-1 bg-primary mx-auto mb-4"></div>
             <p className="text-lg text-gray-600">
-            탁월함과 혁신적인(미래지향적) 디자인을 향한 우리의 헌신
+            탁월한 개발 역량과 선진적인 공간 기획을 통해 미래 가치를 창출하겠다는 우리의 의지
             </p>
           </div>
 
