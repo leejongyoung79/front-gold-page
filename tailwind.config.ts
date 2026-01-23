@@ -1,5 +1,14 @@
 import type { Config } from "tailwindcss";
 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: ["class"], // 이 부분을 반드시 추가하세요!
+  content: [
+    // ... 기존 경로들
+  ],
+  // ... 나머지 설정
+}
+
 export default {
   darkMode: ["class"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],

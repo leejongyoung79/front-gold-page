@@ -3,7 +3,18 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ModeToggle } from "./mode-toggle"
 
+export default function Navbar() {
+  return (
+    <nav className="fixed top-0 w-full flex justify-between items-center px-6 py-4 border-b bg-white dark:bg-gray-950">
+      <div className="font-bold text-xl">FutureBound</div>
+      <div>
+        <ModeToggle />
+      </div>
+    </nav>
+  )
+}
 export function Navbar() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
