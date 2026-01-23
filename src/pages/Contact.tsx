@@ -93,21 +93,27 @@ export default function Contact() {
             </Card>
 
             <Card className="border border-gray-200 shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1 text-gray-900">Phone</h3>
-                    <p className="text-gray-600">
-                      010-7443-8888<br />
-                      010-2524-7407
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+  <CardContent className="pt-6">
+    <div className="flex items-start gap-4">
+      <div className="bg-blue-50 p-3 rounded-lg">
+        <Phone className="h-6 w-6 text-primary" />
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-1 text-gray-900">Phone</h3>
+        <div className="text-gray-600 space-y-1">
+          {/* 첫 번째 번호 */}
+          <a href="tel:01074438888" className="block hover:text-blue-600 hover:underline transition-all">
+            010-7443-8888
+          </a>
+          {/* 두 번째 번호 */}
+          <a href="tel:01025247407" className="block hover:text-blue-600 hover:underline transition-all">
+            010-2524-7407
+          </a>
+        </div>
+      </div>
+    </div>
+  </CardContent>
+</Card>
           </div>
 
           {/* Contact Form */}
