@@ -35,10 +35,10 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Get in Touch</h1>
-          <p className="text-xl text-gray-600">
-          새로운 개발 프로젝트를 계획하고 계신가요?<br>
+          <div className="text-xl text-gray-600">
+          새로운 개발 프로젝트를 계획하고 계신가요?<br />
           프로젝트의 개요와 목표를 알려주시면, 24시간 이내에 검토 후 신속히 연락드리겠습니다.
-          </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
