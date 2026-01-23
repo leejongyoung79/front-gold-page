@@ -73,7 +73,7 @@ export default function Home() {
                 우리는 미래를 설계합니다
               </h1>
               <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Innovative solutions for the next generation of infrastructure and design. Creating sustainable legacies through visionary engineering.
+              토지와 공간의 잠재력을 실현하는 개발 기획으로, 미래 세대를 위한 지속 가능한 도시와 자산을 만듭니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/services">
