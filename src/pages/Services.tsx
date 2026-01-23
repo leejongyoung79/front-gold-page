@@ -13,10 +13,9 @@ export default function Services() {
     <div className="min-h-screen pt-24 pb-20 bg-white">
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Our Services</h1>
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">사업 영역</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Comprehensive digital solutions designed to help your business grow.
-            From custom development to strategic consulting, FutureBound is with you every step of the way.
+          개발 및 디벨로퍼 비즈니스 성장을 지원하는 종합 디지털 솔루션을 제공합니다. 맞춤형 시스템 구축부터 전략 컨설팅까지, FutureBound는 전 과정에서 파트너로 함께합니다.
           </p>
         </div>
       </section>
@@ -52,9 +51,9 @@ export default function Services() {
       {/* CTA Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mt-32">
         <div className="bg-gray-50 rounded-2xl p-12 text-center border border-gray-200 max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Need a Custom Solution?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">맞춤형 솔루션이 필요하신가요?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Every business is unique. We optimize our services to match your specific requirements and challenges.
+          귀사만을 위한 맞춤 전략, 맞춤 솔루션.
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-md px-8">

@@ -31,13 +31,13 @@ export default function Home() {
       labelBg: "bg-blue-600"
     },
     {
-      label: "SUSTAINABILITY",
+      label: "지속 가능",
       title: "Green Tech Innovation Hub",
       gradient: "from-orange-400/30 via-amber-400/20 to-orange-500/30",
       labelBg: "bg-green-600"
     },
     {
-      label: "INFRASTRUCTURE",
+      label: "기반 시설",
       title: "Skyline Plaza Complex",
       gradient: "from-blue-400/30 via-cyan-400/20 to-blue-500/30",
       labelBg: "bg-blue-600"
@@ -134,7 +134,7 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-0">Recent Projects</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-0">주요 개발 프로젝트</h2>
             <Link href="/services">
               <Button variant="link" className="text-primary font-semibold text-lg p-0">
                 Explore all projects <ArrowRight className="ml-2 h-4 w-4" />
