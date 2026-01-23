@@ -67,7 +67,7 @@ export default function Contact() {
       <div>
         <h3 className="font-bold text-lg mb-1 text-gray-900">본사</h3>
         <a 
-          href="https://www.google.com/maps/search/?api=1&query=대구광역시+서구+달서로7길" 
+          href="https://map.naver.com/v5/search/대구광역시%20서구%20달서로7길" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-gray-600 block hover:text-blue-600 hover:underline transition-all"
