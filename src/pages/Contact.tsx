@@ -76,21 +76,33 @@ export default function Contact() {
             </Card>
 
             <Card className="border border-gray-200 shadow-sm">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-50 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg mb-1 text-gray-900">Email</h3>
-                    <p className="text-gray-600">
-                    zeiss1001@hanmail.net<br />
-                      motoz3@naver.com
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+  <CardContent className="pt-6">
+    <div className="flex items-start gap-4">
+      <div className="bg-blue-50 p-3 rounded-lg">
+        <Mail className="h-6 w-6 text-primary" />
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-1 text-gray-900">Email</h3>
+        <div className="text-gray-600 space-y-1">
+          {/* 첫 번째 이메일 */}
+          <a 
+            href="mailto:zeiss1001@hanmail.net" 
+            className="block hover:text-blue-600 hover:underline transition-all"
+          >
+            zeiss1001@hanmail.net
+          </a>
+          {/* 두 번째 이메일 */}
+          <a 
+            href="mailto:motoz3@naver.com" 
+            className="block hover:text-blue-600 hover:underline transition-all"
+          >
+            motoz3@naver.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </CardContent>
+</Card>
 
             <Card className="border border-gray-200 shadow-sm">
   <CardContent className="pt-6">
