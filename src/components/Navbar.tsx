@@ -21,9 +21,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <p><div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-              <div className="w-4 h-4 bg-white rounded-sm transform rotate-12"></div>
-            </div></p>
+           
             <span className="text-xl font-bold text-gray-900">황금프로퍼티</span>
           </Link>
 
